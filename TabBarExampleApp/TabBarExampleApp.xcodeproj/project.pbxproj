@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3715D8AA1A518CE400CC6F57 /* MyCreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8A81A518CE400CC6F57 /* MyCreditsViewController.swift */; };
 		3715D8AB1A518CE400CC6F57 /* MyCreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8A91A518CE400CC6F57 /* MyCreditsViewController.xib */; };
+		3715D8B21A51984600CC6F57 /* Creditos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8AC1A51984600CC6F57 /* Creditos.xib */; };
+		3715D8B31A51984600CC6F57 /* CreditPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8AD1A51984600CC6F57 /* CreditPerson.swift */; };
+		3715D8B41A51984600CC6F57 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8AE1A51984600CC6F57 /* Credits.swift */; };
+		3715D8B51A51984600CC6F57 /* Credits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8AF1A51984600CC6F57 /* Credits.xib */; };
+		3715D8B61A51984600CC6F57 /* CreditsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8B01A51984600CC6F57 /* CreditsCell.swift */; };
+		3715D8B71A51984600CC6F57 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8B11A51984600CC6F57 /* CreditsCell.xib */; };
 		37454B871A44A85F008EB825 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454B861A44A85F008EB825 /* main.m */; };
 		37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454B891A44A85F008EB825 /* AppDelegate.m */; };
 		37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37454B8C1A44A85F008EB825 /* FirstViewController.m */; };
@@ -25,12 +31,6 @@
 		377C9A521A48914D0025DC48 /* ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A4B1A48914D0025DC48 /* ContactManager.m */; };
 		377C9A531A48914D0025DC48 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A4D1A48914D0025DC48 /* Contact.m */; };
 		377C9A561A4891D20025DC48 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377C9A551A4891D20025DC48 /* Contacts.storyboard */; };
-		377C9A6D1A48BDB10025DC48 /* Creditos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377C9A661A48BDB10025DC48 /* Creditos.xib */; };
-		377C9A6E1A48BDB10025DC48 /* CreditPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A671A48BDB10025DC48 /* CreditPerson.swift */; };
-		377C9A701A48BDB10025DC48 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A691A48BDB10025DC48 /* Credits.swift */; };
-		377C9A711A48BDB10025DC48 /* Credits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377C9A6A1A48BDB10025DC48 /* Credits.xib */; };
-		377C9A721A48BDB10025DC48 /* CreditsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377C9A6B1A48BDB10025DC48 /* CreditsCell.swift */; };
-		377C9A731A48BDB10025DC48 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377C9A6C1A48BDB10025DC48 /* CreditsCell.xib */; };
 		3781C5741A44B88100D84566 /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C5731A44B88100D84566 /* Credits.storyboard */; };
 		3781C5761A44B96800D84566 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C5751A44B96800D84566 /* Messages.storyboard */; };
 		3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781C57B1A44BA7B00D84566 /* MessageFirstViewController.m */; };
@@ -50,6 +50,12 @@
 /* Begin PBXFileReference section */
 		3715D8A81A518CE400CC6F57 /* MyCreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCreditsViewController.swift; sourceTree = "<group>"; };
 		3715D8A91A518CE400CC6F57 /* MyCreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCreditsViewController.xib; sourceTree = "<group>"; };
+		3715D8AC1A51984600CC6F57 /* Creditos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Creditos.xib; sourceTree = "<group>"; };
+		3715D8AD1A51984600CC6F57 /* CreditPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditPerson.swift; sourceTree = "<group>"; };
+		3715D8AE1A51984600CC6F57 /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		3715D8AF1A51984600CC6F57 /* Credits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Credits.xib; sourceTree = "<group>"; };
+		3715D8B01A51984600CC6F57 /* CreditsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsCell.swift; sourceTree = "<group>"; };
+		3715D8B11A51984600CC6F57 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsCell.xib; sourceTree = "<group>"; };
 		37454B811A44A85F008EB825 /* TabBarExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37454B851A44A85F008EB825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37454B861A44A85F008EB825 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,12 +85,6 @@
 		377C9A4C1A48914D0025DC48 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/Contact.h; sourceTree = "<group>"; };
 		377C9A4D1A48914D0025DC48 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = ../../../VirtualPet/VirtualPet/VirtualPet/ContactsView/Contact.m; sourceTree = "<group>"; };
 		377C9A551A4891D20025DC48 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
-		377C9A661A48BDB10025DC48 /* Creditos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Creditos.xib; path = ../../../../Downloads/Archive/Creditos.xib; sourceTree = "<group>"; };
-		377C9A671A48BDB10025DC48 /* CreditPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditPerson.swift; path = ../../../../Downloads/Archive/CreditPerson.swift; sourceTree = "<group>"; };
-		377C9A691A48BDB10025DC48 /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Credits.swift; path = ../../../../Downloads/Archive/Credits.swift; sourceTree = "<group>"; };
-		377C9A6A1A48BDB10025DC48 /* Credits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Credits.xib; path = ../../../../Downloads/Archive/Credits.xib; sourceTree = "<group>"; };
-		377C9A6B1A48BDB10025DC48 /* CreditsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsCell.swift; path = ../../../../Downloads/Archive/CreditsCell.swift; sourceTree = "<group>"; };
-		377C9A6C1A48BDB10025DC48 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsCell.xib; path = ../../../../Downloads/Archive/CreditsCell.xib; sourceTree = "<group>"; };
 		3781C5731A44B88100D84566 /* Credits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Credits.storyboard; sourceTree = "<group>"; };
 		3781C5751A44B96800D84566 /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		3781C57A1A44BA7B00D84566 /* MessageFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFirstViewController.h; sourceTree = "<group>"; };
@@ -222,12 +222,12 @@
 		377C9A651A48BCF30025DC48 /* Credits */ = {
 			isa = PBXGroup;
 			children = (
-				377C9A661A48BDB10025DC48 /* Creditos.xib */,
-				377C9A671A48BDB10025DC48 /* CreditPerson.swift */,
-				377C9A691A48BDB10025DC48 /* Credits.swift */,
-				377C9A6A1A48BDB10025DC48 /* Credits.xib */,
-				377C9A6B1A48BDB10025DC48 /* CreditsCell.swift */,
-				377C9A6C1A48BDB10025DC48 /* CreditsCell.xib */,
+				3715D8AC1A51984600CC6F57 /* Creditos.xib */,
+				3715D8AD1A51984600CC6F57 /* CreditPerson.swift */,
+				3715D8AE1A51984600CC6F57 /* Credits.swift */,
+				3715D8AF1A51984600CC6F57 /* Credits.xib */,
+				3715D8B01A51984600CC6F57 /* CreditsCell.swift */,
+				3715D8B11A51984600CC6F57 /* CreditsCell.xib */,
 				3715D8A81A518CE400CC6F57 /* MyCreditsViewController.swift */,
 				3715D8A91A518CE400CC6F57 /* MyCreditsViewController.xib */,
 			);
@@ -316,15 +316,15 @@
 			files = (
 				377C9A561A4891D20025DC48 /* Contacts.storyboard in Resources */,
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
-				377C9A711A48BDB10025DC48 /* Credits.xib in Resources */,
-				377C9A6D1A48BDB10025DC48 /* Creditos.xib in Resources */,
-				377C9A731A48BDB10025DC48 /* CreditsCell.xib in Resources */,
+				3715D8B51A51984600CC6F57 /* Credits.xib in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
+				3715D8B71A51984600CC6F57 /* CreditsCell.xib in Resources */,
 				3715D8AB1A518CE400CC6F57 /* MyCreditsViewController.xib in Resources */,
 				377C9A511A48914D0025DC48 /* ContactCell.xib in Resources */,
 				37454B951A44A85F008EB825 /* Images.xcassets in Resources */,
 				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
 				3781C5741A44B88100D84566 /* Credits.storyboard in Resources */,
+				3715D8B21A51984600CC6F57 /* Creditos.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,12 +352,12 @@
 				3781C57C1A44BA7B00D84566 /* MessageFirstViewController.m in Sources */,
 				37454B8A1A44A85F008EB825 /* AppDelegate.m in Sources */,
 				377C9A521A48914D0025DC48 /* ContactManager.m in Sources */,
+				3715D8B61A51984600CC6F57 /* CreditsCell.swift in Sources */,
 				37454B8D1A44A85F008EB825 /* FirstViewController.m in Sources */,
-				377C9A721A48BDB10025DC48 /* CreditsCell.swift in Sources */,
 				3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */,
 				37454B871A44A85F008EB825 /* main.m in Sources */,
-				377C9A701A48BDB10025DC48 /* Credits.swift in Sources */,
-				377C9A6E1A48BDB10025DC48 /* CreditPerson.swift in Sources */,
+				3715D8B41A51984600CC6F57 /* Credits.swift in Sources */,
+				3715D8B31A51984600CC6F57 /* CreditPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
