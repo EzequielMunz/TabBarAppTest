@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		3715D8AA1A518CE400CC6F57 /* MyCreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8A81A518CE400CC6F57 /* MyCreditsViewController.swift */; };
 		3715D8AB1A518CE400CC6F57 /* MyCreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8A91A518CE400CC6F57 /* MyCreditsViewController.xib */; };
-		3715D8B21A51984600CC6F57 /* Creditos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8AC1A51984600CC6F57 /* Creditos.xib */; };
 		3715D8B31A51984600CC6F57 /* CreditPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8AD1A51984600CC6F57 /* CreditPerson.swift */; };
-		3715D8B41A51984600CC6F57 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8AE1A51984600CC6F57 /* Credits.swift */; };
-		3715D8B51A51984600CC6F57 /* Credits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8AF1A51984600CC6F57 /* Credits.xib */; };
 		3715D8B61A51984600CC6F57 /* CreditsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8B01A51984600CC6F57 /* CreditsCell.swift */; };
 		3715D8B71A51984600CC6F57 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D8B11A51984600CC6F57 /* CreditsCell.xib */; };
 		3715D8C21A519A6400CC6F57 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3715D8B91A519A6400CC6F57 /* Contact.m */; };
@@ -51,10 +48,7 @@
 /* Begin PBXFileReference section */
 		3715D8A81A518CE400CC6F57 /* MyCreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCreditsViewController.swift; sourceTree = "<group>"; };
 		3715D8A91A518CE400CC6F57 /* MyCreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCreditsViewController.xib; sourceTree = "<group>"; };
-		3715D8AC1A51984600CC6F57 /* Creditos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Creditos.xib; sourceTree = "<group>"; };
 		3715D8AD1A51984600CC6F57 /* CreditPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditPerson.swift; sourceTree = "<group>"; };
-		3715D8AE1A51984600CC6F57 /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
-		3715D8AF1A51984600CC6F57 /* Credits.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Credits.xib; sourceTree = "<group>"; };
 		3715D8B01A51984600CC6F57 /* CreditsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsCell.swift; sourceTree = "<group>"; };
 		3715D8B11A51984600CC6F57 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsCell.xib; sourceTree = "<group>"; };
 		3715D8B81A519A6400CC6F57 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Contacts/Contact.h; sourceTree = "<group>"; };
@@ -225,10 +219,7 @@
 		377C9A651A48BCF30025DC48 /* Credits */ = {
 			isa = PBXGroup;
 			children = (
-				3715D8AC1A51984600CC6F57 /* Creditos.xib */,
 				3715D8AD1A51984600CC6F57 /* CreditPerson.swift */,
-				3715D8AE1A51984600CC6F57 /* Credits.swift */,
-				3715D8AF1A51984600CC6F57 /* Credits.xib */,
 				3715D8B01A51984600CC6F57 /* CreditsCell.swift */,
 				3715D8B11A51984600CC6F57 /* CreditsCell.xib */,
 				3715D8A81A518CE400CC6F57 /* MyCreditsViewController.swift */,
@@ -320,7 +311,6 @@
 				377C9A561A4891D20025DC48 /* Contacts.storyboard in Resources */,
 				3715D8C71A519A6400CC6F57 /* ContactsViewController.xib in Resources */,
 				37454B931A44A85F008EB825 /* Main.storyboard in Resources */,
-				3715D8B51A51984600CC6F57 /* Credits.xib in Resources */,
 				37454B981A44A85F008EB825 /* LaunchScreen.xib in Resources */,
 				3715D8B71A51984600CC6F57 /* CreditsCell.xib in Resources */,
 				3715D8AB1A518CE400CC6F57 /* MyCreditsViewController.xib in Resources */,
@@ -328,7 +318,6 @@
 				3781C5761A44B96800D84566 /* Messages.storyboard in Resources */,
 				3715D8C41A519A6400CC6F57 /* ContactCell.xib in Resources */,
 				3781C5741A44B88100D84566 /* Credits.storyboard in Resources */,
-				3715D8B21A51984600CC6F57 /* Creditos.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +348,6 @@
 				3781C57F1A44BA8800D84566 /* MessageSecondViewController.m in Sources */,
 				3715D8C51A519A6400CC6F57 /* ContactManager.m in Sources */,
 				37454B871A44A85F008EB825 /* main.m in Sources */,
-				3715D8B41A51984600CC6F57 /* Credits.swift in Sources */,
 				3715D8C31A519A6400CC6F57 /* ContactCell.m in Sources */,
 				3715D8B31A51984600CC6F57 /* CreditPerson.swift in Sources */,
 			);

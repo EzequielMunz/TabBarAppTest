@@ -29,9 +29,9 @@ class MyCreditsViewController: UIViewController, UITableViewDataSource, UITableV
         creditsTable.registerNib(UINib(nibName: "CreditsCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "CreditsCell")
         
         var person1 = CreditPerson()
-        person1.setData("Ezequiel Munz", role: "<iOS Developer")
+        person1.setData("Yoga", role: "<Cisne")
         var person2 = CreditPerson()
-        person2.setData("NicolasPalmieri", role: "<iOS Master")
+        person2.setData("Tiro Loco", role: "<Gunner")
         var person3 = CreditPerson()
         person3.setData("Federico Mazzini", role: "<Aguatero")
         var person4 = CreditPerson()
@@ -45,16 +45,16 @@ class MyCreditsViewController: UIViewController, UITableViewDataSource, UITableV
         var person8 = CreditPerson()
         person8.setData("Pechugas Laru", role: "<Sucker")
         var person9 = CreditPerson()
-        person9.setData("Tiro Loco", role: "<Gunner")
+        person9.setData("NicolasPalmieri", role: "<iOS Master")
         var person10 = CreditPerson()
-        person10.setData("Yoga", role: "<Cisne")
+        person10.setData("Ezequiel Munz", role: "<iOS Developer")
         
         creditsData = [person10, person9, person8, person7, person6, person5, person4, person3, person2, person1]
         
         self.creditsTable.reloadData()
         // Do any additional setup after loading the view.
         
-        //self.animationCredits()
+        self.animationCredits()
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,18 +79,15 @@ class MyCreditsViewController: UIViewController, UITableViewDataSource, UITableV
         
         return cell!
     }
-    
-    //    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    //        return "developTeam"
-    //    }
+
     
     func animationCredits ()
     {
-        let duration = 7.0
+        let duration = 3.7
         let del = 0.0
-        let opt = UIViewAnimationOptions.Repeat
+        let opt = UIViewAnimationOptions.TransitionFlipFromBottom
         UIView.animateWithDuration (duration, delay: del, options: opt, animations:{
-            self.creditsTable.setContentOffset(CGPointMake(0, 800), animated: false)}, completion: {(bool finished) in})
+            self.creditsTable.setContentOffset(CGPointMake(0, 7), animated: true)}, completion: {(bool finished) in})
     }
 
 }
