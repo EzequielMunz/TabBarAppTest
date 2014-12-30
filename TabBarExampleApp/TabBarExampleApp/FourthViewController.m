@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [[[UIAlertView alloc] initWithTitle:@"Welcome" message:@"You are testing the Humana copy app" delegate:self cancelButtonTitle:@"OKA" otherButtonTitles:nil, nil] show];
+    [[[UIAlertView alloc] initWithTitle:@"Welcome" message:@"You are testing the TabBar app" delegate:self cancelButtonTitle:@"OKA" otherButtonTitles:nil, nil] show];
 }
 
 - (void)didReceiveMemoryWarning {
