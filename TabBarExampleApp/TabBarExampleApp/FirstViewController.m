@@ -10,10 +10,12 @@
 #import "MessageFirstViewController.h"
 #import "MessageSecondViewController.h"
 #import "TabBarExampleApp-Swift.h"
+#import "IASKAppSettingsViewController.h"
 
 #define MAIL_BODY_MSG @"sup bud?!"
-#define MAIL_SUBJ_MSG @"Check it out!"
-#define MAIL_REC_ADDRESS @"nicolas.palmieri@globant.com"
+#define MAIL_SUBJ_MSG @"Hallo there!"
+#define MAIL_REC_ADDRESS1 @"nicolas.palmieri@globant.com" 
+#define MAIL_REC_ADDRESS2 @"ezequiel.munz@globant.com"
 
 NSString* const CELL_ID = @"Cell";
 
@@ -45,6 +47,7 @@ typedef enum
 @property (strong, nonatomic) IBOutlet UITableView *myTable;
 @property (nonatomic, strong) NSArray* dataWea;
 @property (nonatomic, strong) NSArray* dataInfo;
+@property (nonatomic, strong) NSArray* dataRecipients;
 
 @property (strong, nonatomic) MFMailComposeViewController *correo;
 
@@ -58,6 +61,7 @@ typedef enum
     
     self.dataWea = @[@"Messages" ,@"Credits"];
     self.dataInfo = @[@"Settings", @"Data", @"Information", @"Contact Us"];
+    self.dataRecipients = @[MAIL_REC_ADDRESS1, MAIL_REC_ADDRESS2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,26 +105,6 @@ typedef enum
     }
 
 }
-
-/*- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UITableViewHeaderFooterView* headerView = [[UITableViewHeaderFooterView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
-    [headerView setTintColor:[UIColor blackColor]];
-    
-    TableSections idSection = (TableSections)section;
-    switch (idSection) {
-        case WEA:
-            [headerView.textLabel setText:@"WEA"];
-            break;
-        case INFO:
-            [headerView.textLabel setText:@"INFO"];
-            break;
-        default:
-            break;
-    }
-
-    return headerView;
-}*/
 
 -(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
 {
@@ -170,6 +154,8 @@ typedef enum
 {
     TableSections idSection = (TableSections)indexPath.section;
     MyCreditsViewController* view;
+    IASKAppSettingsViewController* modal;
+    
     switch (idSection) {
         case WEA:
             switch (indexPath.row)
@@ -187,20 +173,29 @@ typedef enum
         case INFO:
             switch (indexPath.row) {
                 case SETTINGS:
-                    [self showAlertViewWithTitle:@"SETTINGS" andMessage:@"Put your settings here" andCancelButton:@"Yes SIR"];
+                    modal = [[IASKAppSettingsViewController alloc] initWithStyle: UITableViewStyleGrouped];
+                    [self.navigationController presentViewController:modal animated:YES completion:nil];
+                    [self performSelector: @selector(discardModal) withObject:nil afterDelay: 5.0f];
+                    //[self showAlertViewWithTitle:@"SETTINGS" andMessage:@"Put your settings here" andCancelButton:@"Yes SIR"];
                     break;
                 case DATA:
+                    
                     [self showAlertViewWithTitle:@"DATA" andMessage:@"Put your data here" andCancelButton:@"Yes SIR"];
                     break;
                 case INFORMATION:
                     [self instantiateViewControllerId:@"ContactsList" inStoryboard:@"Contacts"];
                     break;
                 case CONTACT_US:
-                    [self showMail:MAIL_REC_ADDRESS];
+                    [self showMail];
                     break;
             }
             break;
     }
+}
+
+- (void) discardModal
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void) instantiateViewControllerId: (NSString*)identifier inStoryboard: (NSString*)storyboard
@@ -220,7 +215,7 @@ typedef enum
 }
 
 #pragma mark - Mail
--(void)showMail:(NSString*) address
+-(void)showMail
 {
     MFMailComposeViewController *correo = [[MFMailComposeViewController alloc] init];
     correo.mailComposeDelegate = self;
@@ -234,7 +229,7 @@ typedef enum
     [correo setMessageBody:mailBody isHTML:NO];
     
     //To
-    [correo setToRecipients:[NSArray arrayWithObject:address]];
+    [correo setToRecipients:[NSArray arrayWithArray:self.dataRecipients]];
     
     //Interface
     [self presentViewController:correo animated:YES completion:nil];

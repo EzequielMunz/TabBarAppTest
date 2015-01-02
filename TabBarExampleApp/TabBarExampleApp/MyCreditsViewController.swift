@@ -129,7 +129,7 @@ class MyCreditsViewController: UIViewController, UITableViewDataSource, UITableV
         let del = 0.0
         let opt = UIViewAnimationOptions.TransitionFlipFromBottom
         UIView.animateWithDuration (duration, delay: del, options: opt, animations:{
-            self.creditsTable.setContentOffset(CGPointMake(0, 7), animated: true)}, completion: {(bool finished) in})
+            self.creditsTable.setContentOffset(CGPointMake(0, 7), animated: false)}, completion: {(bool finished) in})
     }
 
 }
