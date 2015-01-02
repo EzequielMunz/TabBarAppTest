@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Grid-->
+        <!--Main Menu-->
         <scene sceneID="yuo-OJ-ovc">
             <objects>
                 <navigationController id="Lq9-LG-drV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Grid" image="grid" id="9Qi-FM-FH7"/>
+                    <tabBarItem key="tabBarItem" title="Main Menu" image="grid" id="9Qi-FM-FH7"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Cn0-Ku-9Gt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIi-0V-hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="-766"/>
+            <point key="canvasLocation" x="-302" y="-818"/>
         </scene>
         <!--Grid-->
         <scene sceneID="hNz-n2-bh7">
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86" y="-766"/>
+            <point key="canvasLocation" x="64" y="-818"/>
         </scene>
         <!--Random-->
         <scene sceneID="XkX-Ma-QxJ">
@@ -79,7 +79,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTt-ed-mnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="-766"/>
+            <point key="canvasLocation" x="656" y="-636"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="-766"/>
+            <point key="canvasLocation" x="1042" y="-636"/>
         </scene>
         <!--Arrow-->
         <scene sceneID="B5Z-fN-8uQ">
@@ -222,7 +222,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="0.0"/>
+            <point key="canvasLocation" x="-884" y="0.0"/>
         </scene>
     </scenes>
     <resources>

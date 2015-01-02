@@ -126,6 +126,7 @@ typedef enum
 {
     UITableViewHeaderFooterView* headerView = (UITableViewHeaderFooterView*)view;
     [headerView setTintColor:[UIColor blackColor]];
+    [headerView setAlpha:0.6f];
     [headerView.textLabel setTextColor:[UIColor whiteColor]];
     
     TableSections idSection = (TableSections)section;

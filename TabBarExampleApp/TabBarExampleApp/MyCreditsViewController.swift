@@ -49,12 +49,13 @@ class MyCreditsViewController: UIViewController, UITableViewDataSource, UITableV
         var person10 = CreditPerson()
         person10.setData("Ezequiel Munz", role: "<iOS Developer")
         
-        creditsData = [person10, person9, person8, person7, person6, person5, person4, person3, person2, person1]
+        creditsData = [person10, person9, person8/*, person7, person6, person5, person4, person3, person2, person1*/]
         
+        self.creditsTable.backgroundColor = UIColor.clearColor()
         self.creditsTable.reloadData()
         // Do any additional setup after loading the view.
         
-        self.animationCredits()
+        //self.animationCredits()
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,21 +64,62 @@ class MyCreditsViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return creditsData.count
+        return creditsData.count*2
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if(indexPath.row % 2 == 0)
+        {
+            switch (indexPath.row)
+            {
+            case 0:
+                return 70
+            case 2:
+                return 100
+            case 4:
+                return 120
+            default:
+                return 70
+            }
+        }
+        else
+        {
+            switch (indexPath.row)
+            {
+            case 1:
+                return 20
+            case 3:
+                return 40
+            default:
+                return 70
+            }
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("CreditsCell", forIndexPath: indexPath) as? CreditsCell
-        
-        if (cell == nil)
+        if(indexPath.row % 2 == 0)
         {
-            cell = CreditsCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CreditsCell")
+            var cell = tableView.dequeueReusableCellWithIdentifier("CreditsCell", forIndexPath: indexPath) as? CreditsCell
+            
+            if (cell == nil)
+            {
+                cell = CreditsCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CreditsCell")
+            }
+            
+            cell?.layer.cornerRadius = 20.0
+            cell!.fillWithPerson(creditsData[indexPath.row/2] as CreditPerson)
+            
+            return cell!
+        }
+        else
+        {
+            var separateCell = UITableViewCell()
+            separateCell.backgroundColor = UIColor.clearColor()
+            separateCell.userInteractionEnabled = false
+            return separateCell
         }
         
-        cell!.fillWithPerson(creditsData[indexPath.row] as CreditPerson)
-        
-        return cell!
     }
 
     

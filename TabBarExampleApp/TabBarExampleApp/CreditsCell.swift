@@ -38,7 +38,8 @@
         
         func fillWithPerson (person: CreditPerson)
         {
-            self.lblName?.text = person.personName
+            self.person = person
+            self.lblName?.text = "    " + person.personName
             self.lblRole?.text = person.personRole
         }
 }

@@ -126,7 +126,6 @@ NSString* const MAIL_SUBJECT = @"Que app copada";
                          componentsJoinedByString:@""];
     tel = [NSString stringWithFormat:@"tel://%@",tel];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:tel]];
-        
 }
 
 @end
